@@ -103,6 +103,13 @@ li {
   color: var(--white);
 }
 
+.head {
+  position: absolute;
+  width: 100%;
+  padding: 48px 0px;
+  z-index: 2;
+}
+
 footer {
   background-color: #000;
 }
@@ -142,6 +149,30 @@ footer .social a:hover {
     width: 300px;
   }
 }
+.foot {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 48px 0px;
+}
+.foot .social {
+  display: flex;
+}
+.foot .social a {
+  display: flex;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #999;
+  border-radius: 160px;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  transition: all 0.3s ease-out;
+}
+.foot .social a:hover {
+  opacity: 0.5;
+}
+
 h1, h2, h3, h4, h5, h6, span, a, p {
   line-height: 1.5em !important;
   font-family: "Inter", sans-serif;
@@ -204,6 +235,10 @@ h1, h2, h3, h4, h5, h6, span, a, p {
   letter-spacing: 2px;
 }
 
+.letter-space {
+  letter-spacing: 2px;
+}
+
 :root {
   --white: #fff;
   --primary: #F9B42D;
@@ -233,6 +268,10 @@ h1, h2, h3, h4, h5, h6, span, a, p {
 
 .bg-black {
   background-color: var(--black) !important;
+}
+
+.bg-primary-2 {
+  background-color: var(--primary);
 }
 
 .css-selector {
@@ -304,7 +343,7 @@ h1, h2, h3, h4, h5, h6, span, a, p {
   width: 100%;
   height: 286px;
   border-radius: 10px;
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
 }
 
 .service-sec {
@@ -336,8 +375,26 @@ h1, h2, h3, h4, h5, h6, span, a, p {
   background-position: center;
 }
 
+.heavy {
+  background-image: url(../img/w-p-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.light {
+  background-image: url(../img/w-p-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Manufacturing {
+  background-image: url(../img/w-p-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-logos {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .logo-slider {
@@ -402,6 +459,81 @@ h1, h2, h3, h4, h5, h6, span, a, p {
   object-fit: cover;
 }
 
+.box-m {
+  border-radius: 10px;
+  min-height: 330px;
+}
+
+.p-box {
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  position: relative;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
+  box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.04);
+  height: 345px;
+}
+.p-box::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: var(--primary);
+  position: absolute;
+  border-radius: 35px;
+  left: 10%;
+  top: 0px;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.form-control, .form-select {
+  border: 1px solid #f1f1f1;
+}
+
+.k-image {
+  background-image: url(../img/w-banner.jpg) !important;
+}
+
+.w-hero {
+  background-image: url(../img/w-hero-sec.jpg) !important;
+}
+
+.section-ar {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.section-ar img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .section-ar {
+    height: 100vh;
+  }
+  .section-ar img {
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.card-p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .banner {
   background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
@@ -417,4 +549,36 @@ h1, h2, h3, h4, h5, h6, span, a, p {
     background-position: bottom;
     padding: 200px 0px;
   }
+}
+.inner-banner {
+  padding: 60px 0px;
+  background-color: #222222;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .inner-banner {
+    padding: 80px 0px;
+    background-color: #222222;
+  }
+}
+.abt-banner {
+  background-image: url(../img/abt-banner.jpg);
+}
+
+.product-banner {
+  background-image: url(../img/p-banner.jpg);
+}
+
+.contact-banner {
+  background-image: url(../img/contact.jpg);
+}
+
+.k-abt-banner {
+  background-image: url(../img/w-abt-banner.jpg);
+}
+
+.k-product-banner {
+  background-image: url(../img/w-p-banner.jpg);
 }/*# sourceMappingURL=main.css.map */

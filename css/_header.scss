@@ -32,3 +32,10 @@
         color: var(--white);
     }
 }
+
+.head{
+    position: absolute;
+    width: 100%;
+    padding: 48px 0px;
+    z-index: 2;
+}
