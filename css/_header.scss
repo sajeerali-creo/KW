@@ -46,7 +46,8 @@
     .head{
         width: 100%;
         position: absolute;
-        background: none;
+        background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        padding-top: 100px;
     }
 }
 
