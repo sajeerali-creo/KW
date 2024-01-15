@@ -103,12 +103,6 @@ li {
   color: var(--white);
 }
 
-@media (min-width: 992px) {
-  .head {
-    position: absolute;
-    background: none;
-  }
-}
 .head {
   position: static;
   background: #fff;
@@ -117,6 +111,13 @@ li {
   z-index: 2;
 }
 
+@media (min-width: 992px) {
+  .head {
+    width: 100%;
+    position: absolute;
+    background: none;
+  }
+}
 footer {
   background-color: #000;
 }
@@ -524,6 +525,7 @@ h1, h2, h3, h4, h5, h6, span, a, p {
 
 @media (min-width: 992px) {
   .section-ar {
+    width: 100%;
     height: 100vh;
   }
   .section-ar img {

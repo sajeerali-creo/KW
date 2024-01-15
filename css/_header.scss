@@ -33,17 +33,20 @@
     }
 }
 
-@media (min-width: 992px) {
-    .head{
-        position: absolute;
-        background: none;
-    }
-}
 .head{
     position: static;
     background: #fff;
     width: 100%;
     padding: 48px 0px;
     z-index: 2;
+}
+
+
+@media (min-width: 992px) {
+    .head{
+        width: 100%;
+        position: absolute;
+        background: none;
+    }
 }
 
